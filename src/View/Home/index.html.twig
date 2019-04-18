@@ -2,4 +2,9 @@
 
 {% block content %}
     <h1>Hello Wilder !</h1>
+    {% include'Home/_modal.html.twig' %}
+    <div data-toggle="modal" data-target="#modal1">
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
 {% endblock %}
+
