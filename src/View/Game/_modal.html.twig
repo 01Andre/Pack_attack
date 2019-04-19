@@ -24,6 +24,12 @@
                         <li class="list-group-item row justify-content-center">{{ item['rarity'] =='basic' ? '2' }}{{ item['rarity'] =='junk' ? '0' }}{{ item['rarity'] =='fine' ? '4' }}{{ item['rarity'] =='masterwork' ? '6' }}{{ item['rarity'] =='rare' ? '8' }}{{ item['rarity'] =='exotic' ? '10' }}{{ item['rarity'] =='ascended' ? '12' }}{{ item['rarity'] =='legendary' ? '20' }}
                         </li>
                     </ul>
+                            {% if item.skills is defined %}
+                                <div class="row justify-content-around">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Info</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                </div>
+                            {% endif %}
                     </div>
                     </div>
                     {% if item.skills is not defined %}
